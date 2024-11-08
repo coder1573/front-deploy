@@ -29,6 +29,11 @@ fe-deploy -V
 ## 使用
 ### 1.初始化部署模板
 ```
+# 创建部署目录，配置模版会存放在此处
+mkdir front-deploy
+# 进入部署目录
+cd front-deploy
+# 初始化部署模板
 fe-deploy init
 ```
 
