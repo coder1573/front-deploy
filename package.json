@@ -1,0 +1,38 @@
+{
+    "name": "front-deploy",
+    "version": "1.0.0",
+    "description": "前端自动化打包部署工具；A CLI tool for front-end projects deployment.",
+    "bin": {
+        "fe-deploy": "./bin/index.js"
+    },
+    "scripts": {
+        "fe-deploy": "node bin/index.js"
+    },
+    "keywords": [
+        "vue",
+        "vue2",
+        "vue3",
+        "web",
+        "node-ssh",
+        "deploy",
+        "fe-deploy"
+    ],
+    "author": "coder1573",
+    "license": "MIT",
+    "engines": {
+        "node": ">=9.0.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "empty"
+    },
+    "dependencies": {
+        "archiver": "^3.1.1",
+        "chalk": "^3.0.0",
+        "commander": "^4.1.0",
+        "inquirer": "^7.0.3",
+        "node-ssh": "^7.0.0",
+        "ora": "^4.0.3",
+        "semver": "^7.1.1"
+    }
+}
