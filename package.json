@@ -1,6 +1,6 @@
 {
     "name": "front-deploy",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "前端自动化打包部署工具；A CLI tool for front-end projects deployment.",
     "bin": {
         "fe-deploy": "./bin/index.js"
