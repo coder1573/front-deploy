@@ -121,14 +121,14 @@ function checkDeployConfig(config, checkConfig=true) {
 // 加载配置文件
 function loadConfig(configPath) {
   // 加载主配置文件
-  const configs = require(path.join(configPath));
+  const configs = require(pathJoin(configPath));
 
-  const subConfigPath = path.join(path.dirname(configPath), 'conf');
+  const subConfigPath = pathJoin(path.dirname(configPath), 'conf');
   // 动态加载 conf 目录下的子配置文件
   fs.readdirSync(subConfigPath).forEach(file => {
     if (file.endsWith('.js')) {
       try {
-        const fileConfigs = require(path.join(subConfigPath, file));
+        const fileConfigs = require(pathJoin(subConfigPath, file));
         // 合并每个文件中的配置
         Object.assign(configs, fileConfigs);
       } catch (error) {
@@ -138,6 +138,11 @@ function loadConfig(configPath) {
   });
 
   return configs;
+}
+
+// 路径拼接
+function pathJoin(...paths) {
+  return path.join(...paths).replaceAll('\\', '/');
 }
 
 module.exports = {
@@ -150,5 +155,6 @@ module.exports = {
   checkNodeVersion,
   checkConfigScheme,
   checkDeployConfig,
-  loadConfig
+  loadConfig,
+  pathJoin
 };
