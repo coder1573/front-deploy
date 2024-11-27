@@ -54,10 +54,10 @@ module.exports = {
     port: 22, // ssh port，一般默认22
     username: '', // 登录服务器用户名
     password: '', // 登录服务器密码
-    projectDir: '/projects/deploy', // 本地项目目录
+    projectDir: '/projects/deploy', // 本地项目路径
     distPath: 'dist',  // 本地打包dist文件夹
-    webDir: '/home/wwwroot/test/web',  // 服务器上传目录,即网站发布目录
-    backupDir: '/home/wwwroot/test/bak',  // 服务器上传目录,即网站发布目录
+    webDir: '/home/wwwroot/deploy/web',  // 网站发布目录部署路径，也即服务器上传路径
+    backupDir: '/home/wwwroot/deploy/bak',  // 服务器网站备份路径
   },
   prod: {  // 线上环境
     name: '线上环境',
@@ -66,10 +66,10 @@ module.exports = {
     port: 22, // ssh port，一般默认22
     username: '', // 登录服务器用户名
     password: '', // 登录服务器密码
-    projectDir: '/projects/deploy', // 本地项目目录
+    projectDir: '/projects/deploy', // 本地项目路径
     distPath: 'dist',  // 本地打包dist文件夹
-    webDir: '/home/wwwroot/test/web',  // 服务器上传目录,即网站发布目录
-    backupDir: '/home/wwwroot/test/bak',  // 服务器上传目录,即网站发布目录
+    webDir: '/home/wwwroot/deploy/web',  // 网站发布目录部署路径，也即服务器上传路径
+    backupDir: '/home/wwwroot/deploy/bak',  // 服务器网站备份路径
   }
   // 再还有多余的环境按照这个格式写即可
 }
@@ -85,10 +85,10 @@ module.exports = {
     port: 22, // ssh port，一般默认22
     username: '', // 登录服务器用户名
     password: '', // 登录服务器密码
-    projectDir: '/projects/deploy', // 本地项目目录
+    projectDir: '/projects/deploy', // 本地项目路径
     distPath: 'dist',  // 本地打包dist文件夹
-    webDir: '/home/wwwroot/test/web',  // 服务器上传目录,即网站发布目录
-    backupDir: '/home/wwwroot/test/bak',  // 服务器上传目录,即网站发布目录
+    webDir: '/home/wwwroot/deploy/web',  // 网站发布目录部署路径，也即服务器上传路径
+    backupDir: '/home/wwwroot/deploy/bak',  // 服务器网站备份路径
   }
   // 再还有多余的环境按照这个格式写即可
 }
